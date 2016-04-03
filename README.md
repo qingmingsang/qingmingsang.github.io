@@ -1,16 +1,16 @@
 # qingmingsang.github.io
 按图索骥
 
-<a class="alignleft size-thumbnail wp-image-1491" href="http://qingmingsang.github.io/backbone_shopcar_demo/app.html">
+<a href="http://qingmingsang.github.io/backbone_shopcar_demo/app.html">
 	<img width="150px" height="150px" src="backbone_shopcar_demo/shopcar.png" title="shopcar" alt="shopcar">
 </a>
-<a class="alignleft size-thumbnail wp-image-1491" href="http://qingmingsang.github.io/svg_demo/svg_circletoline.html">
+<a href="http://qingmingsang.github.io/svg_demo/svg_circletoline.html">
 	<img width="150px" height="150px" src="svg_demo/circletoline.png" title="circletoline" alt="circletoline">
 </a>
-<a class="alignleft size-thumbnail wp-image-1491" href="http://qingmingsang.github.io/svg_demo/svg_movementline.html">
+<a href="http://qingmingsang.github.io/svg_demo/svg_movementline.html">
 	<img width="150px" height="150px" src="svg_demo/movementline.png" title="movementline" alt="movementline">
 </a>
-<a class="alignleft size-thumbnail wp-image-1491" href="http://qingmingsang.github.io/measly/demo.html">
+<a href="http://qingmingsang.github.io/measly/demo.html">
 	<img width="150px" height="150px" src="measly/measly.png" title="measly" alt="measly">
 </a>
 
