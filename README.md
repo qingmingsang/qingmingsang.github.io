@@ -1,7 +1,10 @@
 # qingmingsang.github.io
 按图索骥
+<style>
 a{width:400px;height:400px;}
 a img{width:100%;}
+</style>
+
 <a href="http://qingmingsang.github.io/backbone_shopcar_demo/app.html">
 <img src="backbone_shopcar_demo/shopcar.png" >
 </a>
