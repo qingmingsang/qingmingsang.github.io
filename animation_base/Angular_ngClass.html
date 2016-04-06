@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<title></title>
+		<style>
+			.initialClass {
+				background-color: white;
+				color: black;
+				border: 1px solid black;
+			}
+			
+			.animationClass {
+				background-color: black;
+				color: white;
+				border: 1px solid white;
+			}
+			
+			.initialClass.animationClass-add {
+				-webkit-animation: 1s ng-class-animation;
+				-moz-animation: 1s ng-class-animation;
+				-ms-animation: 1s ng-class-animation;
+				-o-animation: 1s ng-class-animation;
+				animation: 1s ng-class-animation;
+			}
+			
+			.initialClass.animationClass-remove {
+				-webkit-animation: 1s ng-class-animation reverse;
+				-moz-animation: 1s ng-class-animation reverse;
+				-ms-animation: 1s ng-class-animation reverse;
+				-o-animation: 1s ng-class-animation reverse;
+				animation: 1s ng-class-animation reverse;
+			}
+			
+			@-webkit-keyframes ng-class-animation {
+				from {
+					background-color: white;
+					color: black;
+					border: 1px solid black;
+				}
+				to {
+					background-color: black;
+					color: white;
+					border: 1px solid white;
+				}
+			}
+			
+			@-moz-keyframes ng-class-animation {
+				from {
+					background-color: white;
+					color: black;
+					border: 1px solid black;
+				}
+				to {
+					background-color: black;
+					color: white;
+					border: 1px solid white;
+				}
+			}
+			
+			@-ms-keyframes ng-class-animation {
+				from {
+					background-color: white;
+					color: black;
+					border: 1px solid black;
+				}
+				to {
+					background-color: black;
+					color: white;
+					border: 1px solid white;
+				}
+			}
+			
+			@-o-keyframes ng-class-animation {
+				from {
+					background-color: white;
+					color: black;
+					border: 1px solid black;
+				}
+				to {
+					background-color: black;
+					color: white;
+					border: 1px solid white;
+				}
+			}
+			
+			@keyframes ng-class-animation {
+				from {
+					background-color: white;
+					color: black;
+					border: 1px solid black;
+				}
+				to {
+					background-color: black;
+					color: white;
+					border: 1px solid white;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div>
+			<h1>ngClass Animation</h1>
+			<div>
+				<button ng-click="toggleNgClass = !toggleNgClass">Toggle ngClass</button>
+				<div class="initialClass" ng-class="{'animationClass' : toggleNgClass}">
+					This element has class 'initialClass' and the ngClass directive is declared as ng-class="{'animationClass' : toggleNgClass}"
+				</div>
+			</div>
+		</div>
+		<script src="angular.min.js"></script>
+		<script src="angular-animate.min.js"></script>
+		<script>
+			var app = angular.module('myApp', ['ngAnimate']);
+		</script>
+	</body>
+
+</html>
