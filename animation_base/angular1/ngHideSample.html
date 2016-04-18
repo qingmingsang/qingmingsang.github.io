@@ -2,12 +2,14 @@
 <html ng-app="myApp">
 
 	<head>
-		<title></title>
+		<title>AngularJS ngHide sample</title>
 	</head>
 
 	<body>
-		<link href="bootstrap.min.css" rel="stylesheet" />
+		<link href="../common/bootstrap.min.css" rel="stylesheet" />
 		<style>
+			/* ngHide animation */
+			
 			.ngHideSample {
 				padding: 10px;
 				margin: 5px;
@@ -46,9 +48,10 @@
 				</div>
 			</div>
 		</div>
-		<script src="angular.min.js"></script>
-		<script src="angular-animate.min.js"></script>
+		<script src="../common/angular.min.js"></script>
+		<script src="../common/angular-animate.min.js"></script>
 		<script>
+		//本质上是 ng-hide为 true 后加上.ng-hide-add-active类
 			var app = angular.module('myApp', ['ngAnimate']);
 		</script>
 	</body>

@@ -2,11 +2,13 @@
 <html ng-app="myApp">
 
 	<head>
-		<title></title>
+		<title>AngularJS ngIf sample</title>
 	</head>
 
 	<body>
 		<style>
+			/* ngIf animation */
+			
 			.animationIf.ng-enter,
 			.animationIf.ng-leave {
 				-webkit-transition: opacity ease-in-out 1s;
@@ -36,9 +38,10 @@
 				This element appears when the fadeAnimation model is true
 			</div>
 		</div>
-		<script src="angular.min.js"></script>
-		<script src="angular-animate.min.js"></script>
+		<script src="../common/angular.min.js"></script>
+		<script src="../common/angular-animate.min.js"></script>
 		<script>
+		//ng-if   .ng-enter     .ng-enter-active      .ng-leave.ng-leave-active
 			var app = angular.module('myApp', ['ngAnimate']);
 			app.controller('animationsCtrl', function($scope) {
 				$scope.fadeAnimation = false;
