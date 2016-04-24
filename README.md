@@ -13,6 +13,8 @@
 <a href="http://qingmingsang.github.io/measly/demo.html">
 	<img width="150px" height="150px" src="measly/measly.png" title="measly" alt="measly">
 </a>
-
+<a href="http://qingmingsang.github.io/Angular_t/base/Applying%20Animations.html#/phones">
+	<img width="150px" height="150px" src="images/angular_phone_list.jpg" title="angular_phone_list" alt="angular_phone_list">
+</a>
 
 
