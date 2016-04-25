@@ -16,5 +16,7 @@
 <a href="http://qingmingsang.github.io/Angular_t/base/Applying%20Animations.html#/phones">
 	<img width="150px" height="150px" src="images/angular_phone_list.jpg" title="angular_phone_list" alt="angular_phone_list">
 </a>
-
+<a href="http://qingmingsang.github.io/Angular_t/cn/case/lottery/index.html">
+	<img width="150px" height="150px" src="images/lottery.jpg" title="lottery" alt="lottery">
+</a>
 
