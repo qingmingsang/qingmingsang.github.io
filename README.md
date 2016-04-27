@@ -19,4 +19,6 @@
 <a href="http://qingmingsang.github.io/Angular_t/cn/case/lottery/index.html">
 	<img width="150px" height="150px" src="images/lottery.jpg" title="lottery" alt="lottery">
 </a>
-
+<a href="http://qingmingsang.github.io/Angular_t/cn/case/progress/index.html">
+	<img width="150px" height="150px" src="images/circle_progress.jpg" title="circle_progress" alt="circle_progress">
+</a>
