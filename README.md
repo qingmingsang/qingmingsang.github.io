@@ -1,5 +1,5 @@
 # qingmingsang.github.io
-按图索骥
+大部分更在[codepen](https://codepen.io/qingmingsang/pens/popular)
 
 <a href="http://qingmingsang.github.io/backbone_shopcar_demo/app.html">
 	<img width="150px" height="150px" src="backbone_shopcar_demo/shopcar.png" title="backbone_shopcar" alt="backbone_shopcar">
@@ -30,4 +30,10 @@
 </a>
 <a href="http://qingmingsang.github.io/css3_animation/spread_menu.html">
 	<img width="150px" height="150px" src="images/css3_spread_menu.jpg" title="css3_spread_menu" alt="css3_spread_menu">
+</a>
+<a href="http://qingmingsang.github.io/css3/flex/flex_base.html">
+	<img width="150px" height="150px" src="images/flex.jpg" title="flex" alt="flex">
+</a>
+<a href="http://qingmingsang.github.io/css3/transform/translate.html">
+	<img width="150px" height="150px" src="images/translate.jpg" title="translate" alt="translate">
 </a>
