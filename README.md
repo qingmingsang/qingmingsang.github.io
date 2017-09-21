@@ -31,6 +31,11 @@
 <a href="http://qingmingsang.github.io/css3_animation/spread_menu.html">
 	<img width="150px" height="150px" src="images/css3_spread_menu.jpg" title="css3_spread_menu" alt="css3_spread_menu">
 </a>
+
 [flex demo](http://qingmingsang.github.io/css3/flex/flex_base.html)
 
 [transform demo](http://qingmingsang.github.io/css3/transform/translate.html)
+
+[file to base64](http://qingmingsang.github.io/tools/fileToBase64.html)
+
+[github search facebook patent licence](http://qingmingsang.github.io/tools/github_search.html)
