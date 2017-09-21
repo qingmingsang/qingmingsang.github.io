@@ -31,9 +31,6 @@
 <a href="http://qingmingsang.github.io/css3_animation/spread_menu.html">
 	<img width="150px" height="150px" src="images/css3_spread_menu.jpg" title="css3_spread_menu" alt="css3_spread_menu">
 </a>
-<a href="http://qingmingsang.github.io/css3/flex/flex_base.html">
-	<img width="150px" height="150px" src="images/flex.png" title="flex" alt="flex">
-</a>
-<a href="http://qingmingsang.github.io/css3/transform/translate.html">
-	<img width="150px" height="150px" src="images/translate.png" title="translate" alt="translate">
-</a>
+[flex demo](http://qingmingsang.github.io/css3/flex/flex_base.html)
+
+[transform demo](http://qingmingsang.github.io/css3/transform/translate.html)
