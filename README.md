@@ -39,3 +39,5 @@
 [file to base64](http://qingmingsang.github.io/tools/fileToBase64.html)
 
 [github search facebook patent licence](http://qingmingsang.github.io/tools/github_search.html)
+
+[redux stack](http://qingmingsang.github.io/static/reduxStack.pdf)
