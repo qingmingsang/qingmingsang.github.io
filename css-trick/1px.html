@@ -31,7 +31,8 @@
             left: 0;
             top: 0;
             transform: scale(0.5);
-            transform-origin: -1px -1px;
+            /*这里其实用-1px -1px效果更好，很可能被其他元素遮罩掉 */
+            transform-origin: 0 0;
             border: 1px black solid;
         }
 
