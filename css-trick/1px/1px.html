@@ -132,21 +132,58 @@
           }
         }
       } */
+
+      .son {
+        width: 100%;
+        height: 100%;
+        background: lightcoral;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .button2 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+        border-bottom: 1px solid transparent;
+        box-sizing: border-box;
+      }
+
+      .bottom2:after {
+        content: '';
+        background: black;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        transform: scaleY(0.5);
+        transform-origin: bottom;
+      }
     </style>
   </head>
 
   <body>
+    1px的border实际上是一条absolute的1px高缩小0.5倍的线。 如果放内部，可能会被其他absolute元素盖掉，这时候需要设置z-index。 如果放外部，需要设置border，并且1px所在元素颜色与外部背景色相似，因为会有0.5px的间隙。
     <div class='container'>
-      <div class='button border'></div>
+      <div class='button border'>
+      </div>
     </div>
     <div class='container'>
-      <div class='button top bottom'></div>
+      <div class='button top bottom'>
+      </div>
     </div>
     <div class='container'>
       <div class='button left right'></div>
     </div>
+    <div class='container'>
+      <div class='button2 bottom2'>
+      </div>
+    </div>
     <script>
-      let a = document.querySelector('.button');
+      let a = document.querySelector('.border');
       a.addEventListener('click', () => {
         console.log('click')
       })
