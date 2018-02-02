@@ -162,6 +162,48 @@
         transform: scaleY(0.5);
         transform-origin: bottom;
       }
+
+      .button3 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+        border: 1px solid lightcoral;
+        box-sizing: border-box;
+      }
+
+      .button3:before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        transform: scale(0.5);
+        transform-origin: 1px 1px;
+        border: 1px black solid;
+      }
+
+      .button4 {
+        width: 102px;
+        height: 102px;
+        background: lightblue;
+        position: relative;
+        border: 1px solid lightcoral;
+        box-sizing: border-box;
+      }
+
+      .button4:before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        transform: scale(0.5);
+        transform-origin: 1px 1px;
+        border: 1px black solid;
+      }
     </style>
   </head>
 
@@ -180,6 +222,15 @@
     </div>
     <div class='container'>
       <div class='button2 bottom2'>
+      </div>
+    </div>
+    加border唯一的好处是内部不会被遮罩到
+    <div class='container'>
+      <div class='button3'>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='button4'>
       </div>
     </div>
     <script>
