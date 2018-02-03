@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
+      div {
+        overflow: hidden;
+      }
+
       .container {
         width: 200px;
         height: 200px;
@@ -12,8 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        float: left;
-        margin: 0 20px 20px 0;
+        margin: 50px auto;
       }
 
       .button {
@@ -204,11 +207,119 @@
         transform-origin: 1px 1px;
         border: 1px black solid;
       }
+
+      .button5 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+      }
+
+      .button5:before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border: 1px black solid;
+        box-sizing: border-box;
+      }
+
+      .button6 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+        border: 1px white solid;
+        box-sizing: border-box;
+      }
+
+      .button6:before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border: 1px black solid;
+        box-sizing: border-box;
+      }
+
+      .button7 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+      }
+
+      .button7:before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border-left: 1px black solid;
+        box-sizing: border-box;
+      }
+
+      .boxx {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+      }
+
+      [brdr] {
+        position: relative;
+      }
+
+      [brdr]:after {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+      }
+
+      [brdr~="top"]:after {
+        border-top-color: black;
+      }
+
+      [brdr~="right"]:after {
+        border-right-color: black;
+      }
+
+      [brdr~="bottom"]:after {
+        border-bottom-color: black;
+      }
+
+      [brdr~="left"]:after {
+        border-left-color: black;
+      }
+
+      [brdr~="all"]:after {
+        border-color: black;
+      }
     </style>
   </head>
 
   <body>
-    1px的border实际上是一条absolute的1px高缩小0.5倍的线。 如果放内部，可能会被其他absolute元素盖掉，这时候需要设置z-index。 如果放外部，需要设置border，并且1px所在元素颜色与外部背景色相似，因为会有0.5px的间隙。
+    1px的border实际上是一条absolute的1px高缩小0.5倍的线。
+    <br> 如果放内部，可能会被其他absolute元素盖掉，这时候需要设置z-index，一般都放内部。
+    <br>如果放外部，需要设置border，并且1px所在元素颜色与外部背景色相似，因为会有0.5px的间隙，而且不能使用overflow:hidden，可谓缺点多多。
+    <p></p>
     <div class='container'>
       <div class='button border'>
       </div>
@@ -224,13 +335,48 @@
       <div class='button2 bottom2'>
       </div>
     </div>
-    加border唯一的好处是内部不会被遮罩到
+    <p>
+      加border唯一的好处是内部不会被遮罩到
+    </p>
     <div class='container'>
       <div class='button3'>
       </div>
     </div>
     <div class='container'>
       <div class='button4'>
+      </div>
+    </div>
+    <p>
+      这个算是比较完美的方案了 ，只要父元素不加无谓的border
+    </p>
+    <div class='container'>
+      <div class='button5'>
+      </div>
+    </div>
+    <p>
+      如果加了border，效果没那么好，可以做一个讨巧的方式，就是将border的颜色设为背景色
+    </p>
+    <div class='container'>
+      <div class='button6'>
+      </div>
+    </div>
+    <p>
+      其他border可以通过这种方式实现了
+    </p>
+    <div class='container'>
+      <div class='button7'>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='boxx' brdr="bottom">
+      </div>
+    </div>
+    <div class='container'>
+      <div class='boxx' brdr="bottom top">
+      </div>
+    </div>
+    <div class='container'>
+      <div class='boxx' brdr="all">
       </div>
     </div>
     <script>
