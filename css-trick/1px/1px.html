@@ -250,6 +250,28 @@
         box-sizing: border-box;
       }
 
+      .button8 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        position: relative;
+        border: 1px lightcoral solid;
+        box-sizing: border-box;
+      }
+
+      .button8:before {
+        content: '';
+        width: calc(200% + 4px);
+        height: calc(200% + 4px);
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border: 1px black solid;
+        box-sizing: border-box;
+      }
+
       .button7 {
         width: 100px;
         height: 100px;
@@ -361,7 +383,15 @@
       </div>
     </div>
     <p>
+      还有一种方式是通过calc计算,他的问题在于一加overflow:hidden就完蛋
+    </p>
+    <div class='container'>
+      <div class='button8'>
+      </div>
+    </div>
+    <p>
       其他border可以通过这种方式实现了
+      <br> 注意在存在z-index层级时，可能会让绑定的事件触发不了
     </p>
     <div class='container'>
       <div class='button7'>
@@ -380,7 +410,7 @@
       </div>
     </div>
     <script>
-      let a = document.querySelector('.border');
+      let a = document.querySelector('[brdr="all"]');
       a.addEventListener('click', () => {
         console.log('click')
       })
